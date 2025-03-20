@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #020403;
+    --icon-color: #F9F6EE;
+    --parenthesis: yellow;
+    --secondary-font-color: #FFFFF0;
+    --primary-font-color: #FAF9F6;
+    --primary-color: #000000;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Open Sans";
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#cover {
+    padding: 1rem;
+    background-image: url(https://res.cloudinary.com/dxt6h3p8d/image/upload/v1742472375/portfolio/fimogro72kzjwsajl7l0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+}
+
+#introduction {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+#introduction h1 {
+    color: var(--primary-font-color);
+    font-size: 3rem;
+}
+
+#introduction p, #introduction a {
+    color: var(--secondary-font-color);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.display-image {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 15rem;
+    margin: 2rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
