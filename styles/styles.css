@@ -139,6 +139,36 @@ strong{
     list-style-position: inside;
 }
 
+.skills-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+        justify-content: center;
+
+}
+
+.skill-item {
+    color: var(--accent1);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: solid 1px white;
+    padding: 1.5rem 3rem;
+    width: fit-content;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.skill-item img {
+    width: 3rem;
+    height: auto;
+}
+
+.invert {
+    filter: invert(1);
+}
+
 .education-item {
     color: var(--accent1);
     margin-bottom: 1rem;
@@ -174,6 +204,36 @@ i {
     }
 }
 
+@media screen and (min-width: 375px){
+    .items-container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .items-container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .items-container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .info-container{
         flex-direction: row;
@@ -199,16 +259,6 @@ i {
     .card p {
         font-size: 1.5rem;
         width: 260px;
-    }
-}
-
-@media screen and (min-width: 425px) {
-    .items-container {
-        flex-direction: column;
-    }
-
-    .item {
-        width: 100%;
     }
 }
 
